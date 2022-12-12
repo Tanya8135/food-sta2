@@ -242,11 +242,13 @@ img {
   font-weight: 700;
   line-height: 1.2;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .favorites-text {
   line-height: 1.1;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .favorites-circle {
@@ -254,4 +256,28 @@ img {
   background-color: #fff;
   border-radius: 50%;
   padding: 17.5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .favorites-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -16px;
+  }
+}
+
+.favorites-item {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .favorites-item {
+    width: calc((100% - 64px) / 2);
+    margin: 16px;
+  }
+}
+.favorites-item:last-of-type {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
