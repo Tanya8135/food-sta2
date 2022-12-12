@@ -280,4 +280,118 @@ img {
 }
 .favorites-item:last-of-type {
   margin-bottom: 0;
+}
+
+.clients {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-clients_320.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-clients_320.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-clients@2_320.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-clients@2_320.png);
+  }
+}
+
+.clients-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.clients-text {
+  line-height: 1.1;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .article-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .article-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .clients-article:not(:last-child) {
+    margin-right: 139px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .clients-article:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients-article:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.clients-bg {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+}
+
+.star-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  fill: #ffe550;
+  padding: 8px 0 28px 8px;
+}
+
+.article-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 264px;
+}
+
+.clients-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cleints-foto {
+  width: 48px;
+  height: 48px;
+  margin: 0 16px 8px 8px;
+}
+
+.clients-name {
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 2px;
+}
+
+.clients-status {
+  line-height: 1.5;
+}
+
+.clients-line {
+  border-right: 0.854167px solid #7eb101;
+  margin-left: 16px;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=main.css.map */
