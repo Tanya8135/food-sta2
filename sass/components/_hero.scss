@@ -1,6 +1,7 @@
 .hero-title {
   @include tablet {
-    @include font(42px, 700, 1.2);
+    font-size: 42px;
+    padding-bottom: 44px;
   }
 
   @include font(28px, 700, 1.2);
@@ -10,7 +11,8 @@
 
 .hero-text {
   @include tablet {
-    font-size: 18px;
+    font-size: 16px;
+    padding-bottom: 40px;
   }
   line-height: 1.5;
   padding-bottom: 28px;
