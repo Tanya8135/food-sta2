@@ -1,0 +1,19 @@
+%button-green {
+  color: $btn-color-text;
+  padding: 6px 18px;
+  border-radius: 30px;
+  background-color: $btn-bg-color;
+  outline: none;
+  border: none;
+  cursor: none;
+}
+
+%button-transpatent {
+  color: $btn-color-text;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $btn-border-color;
+  cursor: none;
+}

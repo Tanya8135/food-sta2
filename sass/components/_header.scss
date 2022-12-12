@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid $line-header-color;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 52px;
+  background-color: burlywood;
+  border-radius: 50%;
+}
+
+.logo-box {
+  padding: 10px 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-menu {
+  fill: $btn-menu-fill;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: none;
+}
+
+.btn-menu-box {
+  padding: 22px 0;
+}

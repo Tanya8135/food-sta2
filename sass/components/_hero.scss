@@ -1,0 +1,22 @@
+.hero-title {
+  @include tablet {
+    @include font(42px, 700, 1.2);
+  }
+
+  @include font(28px, 700, 1.2);
+
+  padding-bottom: 28px;
+}
+
+.hero-text {
+  @include tablet {
+    font-size: 18px;
+  }
+  line-height: 1.5;
+  padding-bottom: 28px;
+}
+
+.btn-hero {
+  @include font(13px, 500, 1.5);
+  @extend %button-green;
+}

@@ -1,0 +1,43 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1240px;
+  }
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+// .header-nav {
+//   display: inline-flex;
+// }
+
+.section {
+  // @include tablet {
+  //   padding: 100px 0;
+  // }
+
+  // @include desktop {
+  //   padding: 100px 0;
+  // }
+
+  padding: 60px 0;
+}
