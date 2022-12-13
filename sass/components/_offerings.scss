@@ -1,4 +1,24 @@
 .offerings {
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(../../images/bg-fon/bg-fon-offerings1280.png);
+
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(../../images/bg-fon/bg-fon-offerings@2_1280.png);
+    }
+  }
+
+  @include tablet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(../images/bg-fon/bg-fon-offerings768.png);
+
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(../images/bg-fon/bg-fon-offerings@2_768.png);
+    }
+  }
+
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(../images/bg-fon/bg-fon-offerings_320.png);
 
@@ -7,6 +27,7 @@
       url(../images/bg-fon/bg-fon-offerings@2_320.png);
   }
 
+  flex-grow: 1;
   background-repeat: no-repeat;
   background-size: cover;
   // padding-top: 50px;
