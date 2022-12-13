@@ -54,7 +54,7 @@ img {
   padding: 60px 0;
 }
 
-.btn-hero {
+.btn-subscribe, .btn-hero {
   color: #2c2c2c;
   padding: 6px 18px;
   border-radius: 30px;
@@ -394,4 +394,135 @@ img {
   border-right: 0.854167px solid #7eb101;
   margin-left: 16px;
   margin-bottom: 8px;
+}
+
+.subscribe {
+  position: relative;
+}
+
+.subscribe-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+
+.subscribe-text {
+  line-height: 1.1;
+  padding-bottom: 40px;
+}
+
+.banana-img {
+  position: absolute;
+  max-width: 161px;
+  top: -15%;
+  left: 28%;
+}
+
+.subscribe-form {
+  display: block;
+  margin: 0 auto;
+  max-width: 280px;
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .subscribe-form {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .subscribe-form .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .subscribe-form .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .desktop-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .desktop-conten {
+    min-width: 656px;
+  }
+}
+
+.sub-input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .sub-input-box {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .sub-input-box {
+    padding: 0;
+  }
+}
+
+.subscribe-input {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
+  outline: none;
+  padding: 12px 131px 12px 11px;
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .subscribe-input {
+    padding: 12px 244px 12px 11px;
+  }
+}
+
+.btn-subscribe-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn-subscribe {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 11px 22px;
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .btn-subscribe {
+    margin-left: 22px;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .btn-subscribe {
+    margin-left: 32px;
+  }
 }/*# sourceMappingURL=main.css.map */
