@@ -1,7 +1,14 @@
 .hero-title {
+  @include desktop {
+    padding-bottom: 28px;
+  }
+
   @include tablet {
-    font-size: 42px;
     padding-bottom: 44px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
   }
 
   @include font(28px, 700, 1.2);
@@ -10,10 +17,11 @@
 }
 
 .hero-text {
-  @include tablet {
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     padding-bottom: 40px;
   }
+
   line-height: 1.5;
   padding-bottom: 28px;
 }
@@ -21,4 +29,17 @@
 .btn-hero {
   @include font(13px, 500, 1.5);
   @extend %button-green;
+}
+
+.hero-flex {
+  display: flex;
+}
+
+.hero-img {
+  position: absolute;
+ display: flex;
+ justify-content: center;
+//  height: 100%;
+  border: 14px solid $circle-color;
+  border-radius: 50%;
 }
