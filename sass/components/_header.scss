@@ -25,6 +25,9 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+
+  @include desktop {
     padding: 0;
   }
 }
@@ -85,4 +88,5 @@
 
 .btn-header {
   @extend %button-green;
+  @include font(13px, 500, 1.5);
 }

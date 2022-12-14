@@ -13,6 +13,8 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
       url(../images/bg-fon/bg-fon-offerings768.png);
 
+    margin-top: -100px;
+
     @include retina {
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
         url(../images/bg-fon/bg-fon-offerings@2_768.png);
@@ -33,18 +35,111 @@
   // padding-top: 50px;
 }
 
+.apple-tablet {
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.aplle-item {
+  // @include desktop {
+  //   display: inline-flex;
+  //   padding-top: 150px;
+  //   padding-bottom: 0;
+  //   margin-right: 36px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    padding-top: 86px;
+    padding-bottom: 0;
+    margin-right: 36px;
+  }
+
+  padding-top: 41px;
+  padding-bottom: 60px;
+  &:nth-child(n + 2) {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:nth-child(n + 2) {
+    @include tablet {
+      display: flex;
+      // height: 211px;
+      margin-top: 145px;
+      margin-right: 36px;
+      // padding-bottom: 127px;
+      // align-items: flex-end;
+    }
+  }
+
+  &:nth-child(3) {
+    @include tablet {
+      height: 136px;
+      margin-top: 205px;
+      margin-right: 0;
+    }
+  }
+}
+
 .offerings-title {
+  @media screen and (min-width: 768px) {
+    @include font(42px, 700, 1.2);
+    width: 526px;
+    padding-bottom: 20px;
+  }
+
   @include font(28px, 700, 1.2);
   padding-top: 60px;
   padding-bottom: 28px;
 }
 
 .offerings-text {
+  @media screen and (min-width: 768px) {
+    @include short-font(16px, 1.2);
+    width: 500px;
+    padding-bottom: 40px;
+  }
+
   line-height: 1.1;
   padding-bottom: 28px;
+
+  @include desktop {
+    line-height: 1.5;
+  }
 }
 
 // Info-offerings
+.info-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-bottom: 32px;
+  }
+}
+
+.info-item {
+  @media screen and (min-width: 768px) {
+    width: 252px;
+    & + .info-item {
+      margin-left: 116px;
+    }
+  }
+
+  @include desktop {
+    & + .info-item {
+      margin-left: 67px;
+    }
+  }
+}
+
 .info-icon {
   display: flex;
   justify-content: center;
@@ -58,11 +153,19 @@
 }
 
 .info-title {
+  @include desktop {
+    line-height: 1.4;
+  }
+
   @include font(18px, 700, 1.2);
   padding-bottom: 16px;
 }
 
 .info-text {
+  @include desktop {
+    line-height: 1.5;
+  }
+
   line-height: 1.1;
   padding-bottom: 28px;
 }
@@ -74,6 +177,9 @@
 }
 
 .read-more {
+  @include desktop {
+    display: none;
+  }
   @include font(13px, 500, 1.5);
 
   display: inline-flex;

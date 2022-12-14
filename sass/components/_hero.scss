@@ -1,9 +1,16 @@
+.hero {
+  position: relative;
+  // padding-bottom: 0;
+}
+
 .hero-title {
   @include desktop {
+    width: 502px;
     padding-bottom: 28px;
   }
 
   @include tablet {
+    width: 537px;
     padding-bottom: 44px;
   }
 
@@ -17,6 +24,14 @@
 }
 
 .hero-text {
+  @include desktop {
+    width: 502px;
+  }
+
+  @include tablet {
+    width: 336px;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 16px;
     padding-bottom: 40px;
@@ -37,9 +52,44 @@
 
 .hero-img {
   position: absolute;
- display: flex;
- justify-content: center;
-//  height: 100%;
+  bottom: 0%;
+  // bottom: 435px;
+  right: 32px;
+
+  display: flex;
+  justify-content: center;
+
+  //  height: 100%;
   border: 14px solid $circle-color;
   border-radius: 50%;
+}
+
+.bg-arrow-l {
+  position: absolute;
+  top: 45%;
+  left: -8%;
+  display: flex;
+  width: 30px;
+  height: 34px;
+  background-color: $bg-white;
+  fill: $arrow-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  transform: rotate(180deg);
+}
+
+.bg-arrow-r {
+  position: absolute;
+  top: 45%;
+  left: 98%;
+  display: flex;
+  width: 30px;
+  height: 34px;
+  background-color: $bg-white;
+  fill: $arrow-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  transform: rotate(0deg);
 }
