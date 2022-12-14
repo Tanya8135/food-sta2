@@ -43,6 +43,12 @@
   }
 }
 
+.margin {
+  @include desktop {
+    margin-left: 0;
+  }
+}
+
 .aplle-item {
   // @include desktop {
   //   display: inline-flex;
@@ -86,7 +92,17 @@
   }
 }
 
+.offerings-box {
+  position: absolute;
+  right: 51px;
+  margin-left: 90px;
+}
+
 .offerings-title {
+  @include desktop {
+    padding-top: 190px;
+  }
+
   @media screen and (min-width: 768px) {
     @include font(42px, 700, 1.2);
     width: 526px;
@@ -193,4 +209,8 @@
 
 .offerings-arrow {
   margin-left: 3px;
+}
+
+.offerings-flex {
+  display: flex;
 }

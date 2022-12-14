@@ -80,7 +80,14 @@
             </div>
 
             <div class="hero-img">
-              <img src="./images/768/cutlet_292.png" alt="Cutlet" />
+              <img srcset="./images/768/cutlet_292.png 292w,
+              ./images/1280/cutlet_528.png 528w,
+              ./images/768/cutlet@2_292.png 584w,
+              ./images/1280/cutlet@2_528.png 1056w
+              "
+
+              sizes="(min-width: 1240px) 528px, (min-width: 768px) 292px, 100vw"
+              src="./images/768/cutlet_292.png" alt="Cutlet" />
 
               <div class="bg-arrow-l">
                 <svg viewBox="0 0 100 100" class="info-arrow" width="30">
@@ -102,13 +109,8 @@
       </section>
 
       <section class="offerings section">
-        <div class="container">
-          <!-- <img
-            srcset="./images/320/apple_280.png 280w, ./images/320/apple@2_280.png 560w"
-            sizes="(min-width: 1920px) 0px, (min-width: 768px) 0px, (min-width: 320px) 280px, 100vw"
-            src="./images/320/apple_280.png"
-            alt="Apple"
-          /> -->
+        <div class="container margin">
+          <div class="offerings-flex">
 
           <ul class="apple-tablet list">
             <li class="aplle-item">
@@ -121,7 +123,7 @@
                   ./images/768/apple@2_357.png   714w,
                   ./images/1280/apple@2_550.png 1100w
                 "
-                sizes="(min-width: 1280px) 550px, (min-width: 768px) 357px, (min-width: 320px) 280px"
+                sizes="(min-width: 1240px) 550px, (min-width: 768px) 357px, (min-width: 320px) 280px"
                 src="./images/320/apple_280.png"
                 alt="Apple"
               />
@@ -143,7 +145,9 @@
               />
             </li>
           </ul>
+          
 
+          <div class="offerings-box">
           <h2 class="offerings-title">What’s Special About Our Offerings</h2>
           <p class="offerings-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
@@ -187,6 +191,8 @@
               <use xlink:href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
+          </div>
+          </div>
         </div>
       </section>
 
