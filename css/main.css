@@ -22,8 +22,6 @@ img {
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1240px) and (max-width: 1920px) {
   .container {
@@ -436,10 +434,12 @@ img {
   }
 }
 
-.offerings-box {
-  position: absolute;
-  right: 51px;
-  margin-left: 90px;
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .offerings-box {
+    position: absolute;
+    right: 51px;
+    margin-left: 90px;
+  }
 }
 
 .offerings-title {
@@ -585,10 +585,12 @@ img {
   margin-left: 3px;
 }
 
-.offerings-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .offerings-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .favorites-title {

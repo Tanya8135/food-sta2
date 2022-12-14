@@ -93,9 +93,11 @@
 }
 
 .offerings-box {
-  position: absolute;
-  right: 51px;
-  margin-left: 90px;
+  @include desktop {
+    position: absolute;
+    right: 51px;
+    margin-left: 90px;
+  }
 }
 
 .offerings-title {
@@ -212,5 +214,7 @@
 }
 
 .offerings-flex {
-  display: flex;
+  @include desktop {
+    display: flex;
+  }
 }
