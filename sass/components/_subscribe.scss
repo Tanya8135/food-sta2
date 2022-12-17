@@ -3,14 +3,30 @@
 }
 
 .subscribe-title {
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+  }
+
   @include font(28px, 700, 1.2);
   padding-bottom: 20px;
 }
 
 .subscribe-text {
+  @media screen and (min-width: 768px) {
+    @include short-font(16px, 1.5);
+    padding-bottom: 24px;
+  }
+
   line-height: 1.1;
   padding-bottom: 40px;
 }
+
+// возможно удалится!!!>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// .img-box {
+//   // position: relative;
+//   display: flex;
+//   justify-content: right;
+// }
 
 // .banana-img {
 //   position: absolute;
@@ -18,6 +34,7 @@
 //   top: -15%;
 //   left: 28%;
 // }
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .subscribe-form {
   @include tablet {

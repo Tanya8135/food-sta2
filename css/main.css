@@ -736,7 +736,6 @@ img {
 }
 
 .clients-box {
-  position: relative;
   margin: 0;
 }
 
@@ -746,10 +745,21 @@ img {
   line-height: 1.2;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .clients-title {
+    font-size: 42px;
+  }
+}
 
 .clients-text {
   line-height: 1.1;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .clients-text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1239px) {
@@ -871,10 +881,15 @@ img {
   margin-bottom: 8px;
 }
 
-.banana-img {
-  position: absolute;
-  bottom: -10%;
-  right: 20%;
+.img-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  z-index: 30;
 }
 
 .subscribe {
@@ -887,10 +902,22 @@ img {
   line-height: 1.2;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .subscribe-title {
+    font-size: 42px;
+  }
+}
 
 .subscribe-text {
   line-height: 1.1;
   padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 24px;
+  }
 }
 
 .subscribe-form {

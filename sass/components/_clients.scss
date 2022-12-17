@@ -38,16 +38,23 @@
 }
 
 .clients-box {
-  position: relative;
+  // position: relative;
   margin: 0;
 }
 
 .clients-title {
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+  }
+
   @include font(28px, 700, 1.2);
   margin-bottom: 20px;
 }
 
 .clients-text {
+  @media screen and (min-width: 768px) {
+    @include short-font(16px, 1.2);
+  }
   line-height: 1.1;
   margin-bottom: 32px;
 }
@@ -151,12 +158,15 @@
 }
 
 // Banana
-.banana-img {
-  position: absolute;
-  // max-width: 161px;
-  bottom: -10%;
-  right: 20%;
-
-  // top: 0%;
-  // left: 28%;
+.img-box {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  z-index: 30;
 }
+
+// .banana-img {
+//   position: absolute;
+//   // bottom: 0%;
+//   // right: 0%;
+// }
