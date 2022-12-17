@@ -36,15 +36,19 @@
 }
 
 .favorites-list {
-  @include tablet {
+  @include desktop {
     display: flex;
-    flex-wrap: wrap;
-    // margin: -32px;
-
-    // margin: -16px;
-    // margin: 0;
+    flex-direction: column;
   }
 
+  @include tablet {
+    display: flex;
+  }
+
+  // margin: -16px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   // width: 100%;
   // display: block;
   // margin: 0 auto;
@@ -52,14 +56,13 @@
 
 .favorites-item {
   @include desktop {
-    display: block;
-    width: calc((100% - 6 * 16px) / 2);
+    width: calc((100% - 6 * 16px) / 3);
     margin: 16px;
   }
 
   @include tablet {
     display: block;
-    width: calc((100% - 4 * 16px) / 2);
+    // width: calc((100% - 4 * 16px) / 2);
     margin: 16px;
   }
 
@@ -68,8 +71,20 @@
     margin-bottom: 0;
   }
 
-  @include mobile {
-    &:nth-child(n + 4) {
+  // @include mobile {
+  //   &:nth-child(n + 4) {
+  //     display: none;
+  //   }
+  // }
+}
+
+.img-flex {
+  @include desktop {
+    display: flex;
+  }
+
+  @include min-mobile {
+    &:last-of-type {
       display: none;
     }
   }

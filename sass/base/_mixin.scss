@@ -1,8 +1,8 @@
-// @mixin min-mobile {
-//   @media screen and (min-width: 320px){
-//     @content;
-//   }
-// }
+@mixin min-mobile {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media screen and (min-width: 480px) and (max-width: 767px) {
