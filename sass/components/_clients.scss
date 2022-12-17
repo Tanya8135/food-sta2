@@ -16,6 +16,10 @@
   flex-grow: 1;
 }
 
+.clients-box {
+  margin: 0;
+}
+
 .clients-title {
   @include font(28px, 700, 1.2);
   margin-bottom: 20px;
@@ -39,9 +43,9 @@
 }
 
 .clients-article:not(:last-child) {
-    @include desktop {
-        margin-right: 139px;
-    }
+  @include desktop {
+    margin-right: 139px;
+  }
 
   @include tablet {
     margin-right: 32px;
@@ -53,6 +57,14 @@
 }
 
 .clients-bg {
+  @include desktop {
+    min-width: 501px;
+  }
+
+  @include tablet {
+    min-width: 336px;
+  }
+
   min-width: 280px;
   background-color: $bg-white;
   border-radius: 30px;
@@ -60,13 +72,13 @@
 }
 
 .star-list {
-  // @include tablet {
-  //   padding: 12px 0 28px 12px;
-  // }
+  @include tablet {
+    padding: 12px 0 28px 12px;
+  }
 
-  // @include desktop {
-  //   padding: 14px 0 28px 14px;
-  // }
+  @include desktop {
+    padding: 14px 0 28px 14px;
+  }
 
   display: flex;
   fill: $star-color;
@@ -74,6 +86,15 @@
 }
 
 .article-text {
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    max-width: 313px;
+  }
+
+  @include desktop {
+    max-width: 473px;
+  }
+
   @include font(16px, 700, 1.2);
   padding-bottom: 40px;
   margin: 0 auto;
