@@ -736,6 +736,7 @@ img {
 }
 
 .clients-box {
+  position: relative;
   margin: 0;
 }
 
@@ -870,6 +871,12 @@ img {
   margin-bottom: 8px;
 }
 
+.banana-img {
+  position: absolute;
+  bottom: -10%;
+  right: 20%;
+}
+
 .subscribe {
   position: relative;
 }
@@ -884,13 +891,6 @@ img {
 .subscribe-text {
   line-height: 1.1;
   padding-bottom: 40px;
-}
-
-.banana-img {
-  position: absolute;
-  max-width: 161px;
-  top: -15%;
-  left: 28%;
 }
 
 .subscribe-form {

@@ -1,22 +1,22 @@
 .clients {
   @include desktop {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../images/bg-fon/bg-fon-clients_1280.png);
+      url(../images/bg-fon/bg-fon-clients_1280.png);
 
-  @include retina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(../images/bg-fon/bg-fon-clients@2_1280.png);
-  }
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(../images/bg-fon/bg-fon-clients@2_1280.png);
+    }
   }
 
   @include tablet {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../images/bg-fon/bg-fon-clients_768.png);
+      url(../images/bg-fon/bg-fon-clients_768.png);
 
-  @include retina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(../images/bg-fon/bg-fon-clients@2_768.png);
-  }
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(../images/bg-fon/bg-fon-clients@2_768.png);
+    }
   }
 
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -30,6 +30,7 @@
   //   display: flex;
   //   flex-direction: column;
   //   justify-content: center;
+
   padding-top: 60px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,6 +38,7 @@
 }
 
 .clients-box {
+  position: relative;
   margin: 0;
 }
 
@@ -146,4 +148,15 @@
   border-right: 0.854167px solid $line-commit-green;
   margin-left: 16px;
   margin-bottom: 8px;
+}
+
+// Banana
+.banana-img {
+  position: absolute;
+  // max-width: 161px;
+  bottom: -10%;
+  right: 20%;
+
+  // top: 0%;
+  // left: 28%;
 }
