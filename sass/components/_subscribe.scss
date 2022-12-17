@@ -93,7 +93,7 @@
 }
 
 .subscribe-input {
-  @include tablet {
+  @media screen and (min-width: 768px) {
     padding: 12px 244px 12px 11px;
   }
 
@@ -106,7 +106,7 @@
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
   outline: none;
-  padding: 12px 131px 12px 11px;
+  padding: 12px 128px 12px 11px;
 }
 
 .btn-subscribe-box {

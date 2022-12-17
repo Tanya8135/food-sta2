@@ -1,24 +1,25 @@
 .bg-footer {
   // position: absolute;
-  background-image: linear-gradient(rgba(0, 0, 0, 0),
-  rgba(0, 0, 0, 0)), 
-  url(../../images/bg-fon/bg-fon-footer_320.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../../images/bg-fon/bg-fon-footer_320.png);
 
   @include retina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0)),
-    url(../../images/bg-fon/bg-fon-footer@2_320.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(../../images/bg-fon/bg-fon-footer@2_320.png);
   }
 
-//   top: 132px;
-// width: 110px;
-// height: 116px;
+  //   top: 132px;
+  // width: 110px;
+  // height: 116px;
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
 }
 
 .footer {
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
   // position: relative;
   padding: 60px 0;
   border-top: 1px solid $line-header-color;
@@ -30,12 +31,26 @@
   align-items: baseline;
 }
 
+.logo-box-footer {
+  padding: 0;
+}
+
 .footer-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 114px;
+    margin-bottom: 57px;
+  }
   margin-left: 81px;
   margin-bottom: 40px;
 }
 
 .footer-item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
   margin-bottom: 20px;
 }
 
@@ -44,7 +59,30 @@
   color: $text-footer-header;
 }
 
+.subscribe-text-footer {
+  @include font(14px, 500, 1.5);
+  margin-bottom: 12px;
+}
+
+.subscribe-input-footer {
+  @include short-font(12px, 1.5);
+
+  color: $email-color-text;
+
+  // display: flex;
+  // flex-direction: column;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
+  outline: none;
+  padding: 12px 129px 12px 11px;
+}
+
 .btn-subscribe-footer {
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+    margin-bottom: 0;
+  }
+
   @include font(13px, 500, 1.5);
   @extend %button-transpatent;
   padding: 11px 22px;
@@ -53,8 +91,14 @@
 }
 
 .private-police {
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    padding-top: 12px;
+    text-align: start;
+  }
+
   @include short-font(10px, 1.2);
- text-align: center;
+  text-align: center;
 }
 
 .private-police-accent {
@@ -63,7 +107,13 @@
 }
 
 .terms-list {
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    padding: 0;
+  }
+
   display: flex;
+  justify-content: center;
   padding: 60px 0 40px 0;
 }
 
@@ -72,12 +122,32 @@
 }
 
 .terms-link {
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
   @include short-font(10px, 1.2);
   color: $accent-color-text;
   border-bottom: 1px solid $accent-color-text;
 }
 
 .right-reserved {
-    @include short-font(10px, 1.2);
-    text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @include tablet {
+    margin-left: 236px;
+  }
+
+  @include short-font(10px, 1.2);
+  text-align: center;
+}
+
+.footer-box {
+  @include tablet {
+    display: inline-flex;
+    width: 1240px;
+    padding: 100px 0 0 0;
+  }
 }
