@@ -358,14 +358,14 @@ img {
 }
 @media screen and (min-width: 1240px) and (max-width: 1920px) {
   .offerings {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings1280.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings1280.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-offerings1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-offerings1280.png);
   }
 }
 @media screen and (min-width: 1240px) and (max-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1240px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1240px) and (max-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1240px) and (max-width: 1920px) and (min-resolution: 2dppx) {
   .offerings {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/bg-fon/bg-fon-offerings@2_1280.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/bg-fon/bg-fon-offerings@2_1280.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-offerings@2_1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-offerings@2_1280.png);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1239px) {
@@ -703,6 +703,30 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+@media screen and (min-width: 1240px) and (max-width: 1920px) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-clients_1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-clients_1280.png);
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1920px) and (min-device-pixel-ratio: 2), screen and (min-width: 1240px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1240px) and (max-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1240px) and (max-width: 1920px) and (min-resolution: 2dppx) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-clients@2_1280.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-clients@2_1280.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-clients_768.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-clients_768.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1239px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1239px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1239px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1239px) and (min-resolution: 2dppx) {
+  .clients {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-clients@2_768.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-clients@2_768.png);
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .clients {
