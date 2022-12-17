@@ -1,6 +1,6 @@
-.favorites-box {
-  margin: 0 auto;
-}
+// .favorites-box {
+//   margin: 0 auto;
+// }
 
 .favorites-title {
   @media screen and (min-width: 768px) {
@@ -29,7 +29,6 @@
 }
 
 .favorites-circle {
-  // display: flex;
   border: 11px solid $circle-color;
   background-color: $bg-white;
   border-radius: 50%;
@@ -40,13 +39,26 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    margin: -16px;
+    // margin: -32px;
+
+    // margin: -16px;
     // margin: 0;
   }
+
+  // width: 100%;
+  // display: block;
+  // margin: 0 auto;
 }
 
 .favorites-item {
+  @include desktop {
+    display: block;
+    width: calc((100% - 6 * 16px) / 2);
+    margin: 16px;
+  }
+
   @include tablet {
+    display: block;
     width: calc((100% - 4 * 16px) / 2);
     margin: 16px;
   }
@@ -54,6 +66,12 @@
   margin-bottom: 20px;
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @include mobile {
+    &:nth-child(n + 4) {
+      display: none;
+    }
   }
 }
 
