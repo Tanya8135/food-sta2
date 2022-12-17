@@ -26,20 +26,68 @@
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 }
 
+// .footer-container {
+//   // margin: 0;
+// }
+
+.footer-flex-displey {
+  @include desktop {
+    display: flex;
+  }
+
+  margin: 0 auto;
+}
+
 .footer-flex {
   display: flex;
   align-items: baseline;
 }
 
+.email-box {
+  @include desktop {
+    margin-left: 314px;
+  }
+}
+
 .logo-box-footer {
-  padding: 0;
+  @include desktop {
+     // padding: 0;
+  margin-left: -15px;
+  }
+ 
+}
+
+.footer-box {
+  @include desktop {
+    padding: 80px 0 0 0;
+    // justify-content: space-between;
+    
+  }
+
+  @include tablet {
+    // max-width: 1240px;
+    padding: 100px 0 0 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer-list {
-  @media screen and (min-width: 768px) {
-    display: flex;
+  @include desktop {
+    margin-left: 148px;
+    margin-bottom: 0;
+  }
+
+  @include tablet {
     margin-left: 114px;
     margin-bottom: 57px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
   margin-left: 81px;
   margin-bottom: 40px;
@@ -47,7 +95,7 @@
 
 .footer-item:not(:last-child) {
   @media screen and (min-width: 768px) {
-    margin-right: 32px;
+    margin-right: 28px;
     margin-bottom: 0;
   }
 
@@ -57,6 +105,7 @@
 .footer-link {
   line-height: 1.1;
   color: $text-footer-header;
+  padding: 10px 0;
 }
 
 .subscribe-text-footer {
@@ -106,10 +155,15 @@
   border-bottom: 1px solid $accent-color-text;
 }
 
+.terms-box {
+  display: block;
+}
+
 .terms-list {
   @media screen and (min-width: 768px) {
     justify-content: start;
     padding: 0;
+    width: 294px;
   }
 
   display: flex;
@@ -118,7 +172,7 @@
 }
 
 .terms-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 20px;
 }
 
 .terms-link {
@@ -136,18 +190,14 @@
     font-size: 12px;
   }
 
-  @include tablet {
-    margin-left: 236px;
-  }
+  // @include tablet {
+  //   margin-left: 236px;
+  // }
 
   @include short-font(10px, 1.2);
   text-align: center;
 }
 
-.footer-box {
-  @include tablet {
-    display: inline-flex;
-    width: 1240px;
-    padding: 100px 0 0 0;
-  }
+.right-reserved-box {
+  display: block;
 }
