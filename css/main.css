@@ -194,7 +194,7 @@ img {
 }
 
 .btn-header-box {
-  padding: 20px 0;
+  padding: 22px 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .btn-header-box {
@@ -208,6 +208,9 @@ img {
   line-height: 1.5;
 }
 
+.hero {
+  padding-bottom: 50px;
+}
 @media screen and (min-width: 1240px) and (max-width: 1920px) {
   .hero {
     padding-top: 159px;
@@ -350,11 +353,15 @@ img {
 .offerings {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-offerings_320.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-offerings_320.png);
+  position: relative;
+  min-width: 320px;
+  height: 1050px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 0;
 }
 @media screen and (min-width: 1240px) and (max-width: 1920px) {
   .offerings {
@@ -409,7 +416,7 @@ img {
 }
 
 .aplle-item {
-  padding-top: 41px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -456,7 +463,6 @@ img {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
-  padding-top: 60px;
   padding-bottom: 28px;
 }
 @media screen and (min-width: 1240px) and (max-width: 1920px) {
