@@ -705,6 +705,7 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/bg-fon/bg-fon-clients_320.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bg-fon/bg-fon-clients_320.png);
   background-position: 50% 50%;
+  height: 810px;
   background-repeat: no-repeat;
   background-size: 100%;
   -webkit-box-flex: 1;
@@ -898,6 +899,7 @@ img {
 
 .img-box {
   position: relative;
+  bottom: -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,7 +910,7 @@ img {
 @media screen and (min-width: 768px) {
   .img-box {
     position: relative;
-    bottom: -100px;
+    bottom: -110px;
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
@@ -929,6 +931,7 @@ img {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1239px) {
