@@ -7,6 +7,8 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
         url(../images/bg-fon/bg-fon-clients@2_1280.png);
     }
+
+    height: 647px;
   }
 
   @include tablet {
@@ -31,7 +33,7 @@
 //   position: relative;
 // min-width: 320px;
 // height: 789px;
-  padding-top: 60px;
+  // padding-top: 60px;
   // padding-bottom: 30px;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -46,6 +48,7 @@
 .clients-title {
   @media screen and (min-width: 768px) {
     font-size: 42px;
+    // padding-top: 100px;
   }
 
   @include font(28px, 700, 1.2);
@@ -160,6 +163,13 @@
 
 // Banana
 .img-box {
+  @include desktop {
+    position: relative;
+    bottom: -100px;
+    justify-content: right;
+    
+  }
+
   position: relative;
   // bottom: 50%;
   // right: -25%;
@@ -167,5 +177,4 @@
   // margin-right: auto;
   display: flex;
   justify-content: center;
-  z-index: 30;
 }

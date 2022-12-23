@@ -1,5 +1,6 @@
 .subscribe {
   position: relative;
+  padding-top: 0;
 }
 
 .subscribe-title {
@@ -15,6 +16,7 @@
   @media screen and (min-width: 768px) {
     @include short-font(16px, 1.5);
     padding-bottom: 24px;
+    width: 656px;
   }
 
   line-height: 1.1;

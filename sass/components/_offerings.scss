@@ -1,7 +1,8 @@
 .offerings {
   @include desktop {
+    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url(../images/bg-fon/bg-fon-offerings1280.png);
+      url(../../images/bg-fon/bg-fon-offerings1280.png);
 
     @include retina {
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -29,9 +30,7 @@
       url(../images/bg-fon/bg-fon-offerings@2_320.png);
   }
 
-  position: relative;
-  min-width: 320px;
-  height: 1050px;
+  
   flex-grow: 1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +38,7 @@
   // margin-left: auto;
   // margin-right: auto;
   // margin: 0 auto;
-  // padding-top: 50px;
+  // padding-bottom: 1200px;
 }
 
 // .offerings-bg {
@@ -107,7 +106,7 @@
 
   @media screen and (min-width: 768px) {
     display: inline-flex;
-    padding-top: 86px;
+    padding-top: 186px;
     padding-bottom: 0;
     margin-right: 36px;
   }
@@ -124,7 +123,7 @@
     @include tablet {
       display: flex;
       // height: 211px;
-      margin-top: 145px;
+      margin-top: 245px;
       margin-right: 36px;
       // padding-bottom: 127px;
       // align-items: flex-end;
@@ -134,7 +133,7 @@
   &:nth-child(3) {
     @include tablet {
       height: 136px;
-      margin-top: 205px;
+      margin-top: 305px;
       margin-right: 0;
     }
   }
@@ -143,6 +142,7 @@
 .offerings-box {
   @include desktop {
     position: absolute;
+    top: 190px;
     right: 51px;
     margin-left: 90px;
   }
@@ -156,6 +156,7 @@
   @media screen and (min-width: 768px) {
     @include font(42px, 700, 1.2);
     width: 526px;
+    padding-top: 60px;
     padding-bottom: 20px;
   }
 
