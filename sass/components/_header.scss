@@ -25,10 +25,17 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
 
   @include desktop {
     padding: 0;
+  }
+}
+
+.header-nav-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
@@ -51,11 +58,11 @@
 // Tablet
 .header-list {
   @include desktop {
-    margin: 0 30px 0 724px;
+    margin: 0 30px 0 0px;
   }
 
   @include tablet {
-    margin: 0 30px 0 191px;
+    margin: 0 30px 0 0px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
